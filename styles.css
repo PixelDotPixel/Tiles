@@ -1,0 +1,314 @@
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center top;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: lightslategrey;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+input[type="radio"]{
+    -webkit-appearance: radio;
+}
+/*--Start Button Styles--*/
+
+.Pallet {
+    height: 20px;
+    width: 20px;
+}
+
+.P_Red {
+    background: darkred !important;
+}
+
+.P_Pink {
+    background: pink !important;
+}
+
+.P_Blue {
+    background: blue !important;
+}
+
+.P_LBlue {
+    background: skyblue !important;
+}
+
+.P_Green {
+    background: green !important;
+}
+
+.P_LGreen {
+    background: lightgreen !important;
+}
+
+.P_Yellow {
+    background: yellow !important;
+}
+
+.P_Orange {
+    background: orange !important;
+}
+
+.P_White {
+    background: white !important;
+}
+
+.P_Erase {
+    background: none !important;
+}
+
+.P_Grey {
+    background: grey !important;
+}
+
+.P_Black {
+    background: black !important;
+}
+
+.Tile {
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.Inactive_Tile {
+    height: 20px !important;
+    width: 20px !important;
+    background: white;
+}
+
+.Active_Tile {
+    height: 20px !important;
+    width: 20px !important;
+/*  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+/*  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+/*  animation-name: example; */
+}
+ 
+
+@keyframes example {
+  from {background-color: blue;}
+  to {background-color: white;}
+}
+
+
+/*--End Button Styles--*/
+
+/*--Start Allignment and Spacing Styles--*/
+.Block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Inline-Box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    white-space: nowrap;
+}
+
+.Inline-Container {
+    display:flex;
+    justify-content: top center;
+    white-space:normal;
+    align-items: center;
+    flex-direction: column;
+    width: 455px;
+    Height: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.Half-Glass {
+    width: 550px !important;
+    height: 450px; 
+}
+
+.Sliver {
+    width: 150px !important;
+    height: 700px;
+}
+
+.Full {
+    width: 900px !important;
+    height: 700px;
+}
+
+.Inline-Cluster {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    border-width: 5px;
+}
+
+.Inline-Cluster-Top {
+    border-top-right-radius:  5px;
+    border-top-left-radius: 5px;
+    border-top-style: groove;
+    border-left-style: groove;
+    border-right-style: groove;
+}
+
+.Inline-Cluster-Middle {
+
+}
+
+.Inline-Cluster-Bottom {
+    border-bottom-right-radius:  5px;
+    border-bottom-left-radius: 5px;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-bottom-style: groove;
+}
+
+.Inline-Style-Color {
+    /*background-color: rgba(90,90,90,0.4);*/
+    border-color: rgba(255,0,0,0.4);
+}
+
+/*Spaceing*/
+.LargeSpace {
+    padding-top: 80px;
+}
+
+.MediumSpace {
+    padding-top: 50px;
+}
+
+.SmallSpace {
+    padding-top: 20px;
+}
+
+/*--End Allignment and spacing--*/
+
+/*--Start Fonts Sizes And Settings--*/
+.Font {
+    color: white;
+    font-family: fantasy;     
+}
+
+.Font_2 {
+    color: white;
+    font-family: serif;
+}
+
+/*Sizes*/
+.Large {
+    font-size: 50px;
+}
+
+.Medium {
+    font-size: 35px;
+}
+
+.Small {
+    font-size: 22px;
+}
+
+.Smaller {
+    font-size: 16px;
+}
+
+/*Settings*/
+
+.Title {
+    text-decoration: underline;
+    /*text-shadow: 3px 3px rgba(255,0,0,0.8);*/
+}
+
+/*End Fonts Sizes And Settings*/
+
+/* Nav Bar */
+.Navcontainer {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+    overflow: hidden;
+    background-color: #333;
+}
+
+.NavList {
+  float: Left;
+}
+
+.NavLink {
+  display: flex;
+  color: white;
+  width: 80px;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NL1:hover {
+  background-color: darkred;
+}
+
+.NL2:hover {
+  background-color: yellow;
+}
+
+.NL3:hover {
+  background-color: lightgreen;
+}
+
+.NL4:hover {
+  background-color: skyblue;
+}
+
+.NL5:hover {
+  background-color: pink;
+}
+/**/
+
+/**/
+.ColorVal {
+    width: 40px;    
+}
+/**/
